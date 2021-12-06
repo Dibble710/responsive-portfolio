@@ -54,13 +54,21 @@ portfolioCloseBtns.forEach((portfolioCloseBtn) => {
 })
 
 // Stop modals from showing on page load
-document.addEventListener("DOMContentLoaded", function(){
-    portfolioModals.forEach((portfolioModalView) => {
-        portfolioModalView.classList.remove('active')
-    })
-    serviceModals.forEach((modalView) => {
-        modalView.classList.remove('active')
-    })
+
+
+//swiper 
+var swiper = new Swiper(".client-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
 
 // video url - https://youtu.be/IJzuN5UGqmo?t=3519
