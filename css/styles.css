@@ -36,6 +36,40 @@
 
 /* ========== General Styling Start ========= */
 
+.dark-theme {
+    /* Main Theme Colors */
+    --first-color: #0e2431;
+    --second-color: #6a59d1;
+    --third-color: #777;
+  
+    /* hover Colors */
+    --hover-color: #614fd0;
+  
+    /* Background Colors */
+    --body-bg-color: #fefefe;
+    --card-bg-color: #fff;
+    --modal-bg-color: #fff;
+    --bg-transparent-color: rgba(0, 0, 0, 0.1);
+    --bg-transparent-color-2: rgba(0, 0, 0, 0.1);
+    --bg-transparent-color-3: rgba(106, 89, 209, 0.1);
+    --line-color: #d7d7d7;
+  
+    /* Color Filter */
+    --color-filter: invert(1);
+  
+    /* Box Shadow */
+    --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+  
+    /* Font Size */
+    --small-font-size: 0.9em;
+    --normal-font-size: 1em;
+  
+    /* Scroll Bar Colors */
+    --scroll-bar-color: #c5cadf;
+    --scroll-thumb-color: #70768a;
+    --scroll-thumb-hover-color: #454f6b;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -93,6 +127,26 @@ img {
 /* ========== Scroll To Top Button End ========= */
 
 /* ========== Light/Dark Theme Button Start ========= */
+
+.theme-btn {
+  z-index: 999999;
+  position: fixed;
+  right: 0;
+  top: 100px;
+  background: var(--bg-transparent-color-2);
+  backdrop-filter: blue(20px);
+  width: 50px;
+  height: 50px;
+  font-size: 1.2em;
+  border-radius: 5px 0 0 5px;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+
+.theme-btn .fa-sun {
+  display: none;
+}
+
 /* ========== Light/Dark Theme Button End ========= */
 
 /* ========== Scroll Bar Start ========= */
