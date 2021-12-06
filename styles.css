@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* Main Theme Colors */
+  --first-color: #0e2431;
+  --second-color: #6a59d1;
+  --third-color: #777;
+
+  /* hover Colors */
+  --hover-color: #614fd0;
+
+  /* Background Colors */
+  --body-bg-color: #fefefe;
+  --card-bg-color: #fff;
+  --modal-bg-color: #fff;
+  --bg-transparent-color: rgba(0, 0, 0, 0.1);
+  --bg-transparent-color-2: rgba(0, 0, 0, 0.1);
+  --bg-transparent-color-3: rgba(106, 89, 209, 0.1);
+  --line-color: #d7d7d7;
+
+  /* Color Filter */
+  --color-filter: invert(1);
+
+  /* Box Shadow */
+  --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+
+  /* Font Size */
+  --small-font-size: 0.9em;
+  --normal-font-size: 1em;
+
+  /* Scroll Bar Colors */
+  --scroll-bar-color: #c5cadf;
+  --scroll-thumb-color: #70768a;
+  --scroll-thumb-hover-color: #454f6b;
+}
+
+/* ========== General Styling Start ========= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--first-color);
+  background-color: var(--body-bg-color);
+  margin: 2rem 0 0 0;
+  transition: 0.5s ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+    max-width: 500px;
+}
+
+/* ========== General Styling End ========= */
+
+/* ========== Scroll To Top Button Start ========= */
+/* ========== Scroll To Top Button End ========= */
+
+/* ========== Light/Dark Theme Button Start ========= */
+/* ========== Light/Dark Theme Button End ========= */
+
+/* ========== Scroll Bar Start ========= */
+::-webkit-scrollbar {
+    width: 10px;
+    background: var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scroll-thumb-color);
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scroll-thumb-hover-color);
+}
+/* ========== Scroll Bar End ========= */
+
+
+/* ========== Header Start ========= */
+header {
+  z-index: 99999;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(20px);
+  transition: 0.6s ease;
+}
+
+header.sticky {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: var(--box-shadow);
+}
+
+.nav-bar {
+  position: relative;
+  height: calc(4rem + 1rem);
+  max-width: 1250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  transition: 0.6s ease;
+}
+
+header.sticky .nav-bar {
+    height: calc(2.5rem + 1rem);
+}
+
+.nav-bar .logo {
+  color: var(--first-color);
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.nav-items a {
+  color: var(--first-color);
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+}
+.nav-items a:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-items a:hover {
+  color: var(--second-color);
+}
+
+/* ========== Header End ========= */
+
+/* ========== Common Styles For ALl Sections Start ========= */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+    position: relative;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6rem 2rem 2rem;
+}
+
+.sub-section {
+    position: relative;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6rem 0;
+}
+
+.section-title-01 {
+    font-size: 4.5em;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    background: linear-gradient(to top, transparent 0%, var(--first-color) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: .1;
+}
+
+.section-title-02 {
+    font-size: 2.5em;
+    font-weight: 700;
+    transform: translateY(-80px);
+}
+
+.section-title-02:before {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 5px;
+    right: 0;
+    bottom: 0;
+    background-color: var(--second-color);
+}
+
+.container {
+    position: relative;
+    flex-direction: column;
+}
+/* ========== Common Styles For ALl Sections End ========= */
+
+/* ========== Home Section Start ========= */
+.home {
+  position: relative;
+  max-width: 1250px;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4rem 2rem;
+  flex-direction: column;
+}
+
+.home .home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.home-container .media-icons {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.home-container .media-icons a {
+  color: var(--second-color);
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.home-container .media-icons a:hover {
+    color: var(--hover-color);
+}
+
+.home-container .info h2 {
+    font-size: 4em;
+    font-weight: 600;
+    line-height: 70px;
+}
+
+.home-container .info h3 {
+    color: var(--third-color);
+    font-feature-settings: 1.3em;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.home-container .info p {
+    color: var(--third-color);
+    font-size: var(--normal-font-size);
+    max-width: 350px;
+}
+
+.btn {
+    background: var(--second-color);
+    color: #fff;
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 25px;
+    padding: 20px 30px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background: var(--hover-color);
+}
+
+.home-container .home-img {
+    position: relative;
+}
+
+.home-container .home-img img {
+    width: 90%;
+    transform: translate(0, 0);
+    border-radius: 50%;
+}
+
+.home .scroll-down {
+    color: var(--first-color);
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.home .scroll-down i {
+    color: var(--second-color);
+    font-size: 1.2em;
+    animation: arrow-down ease 1.5s infinite;
+}
+
+@keyframes arrow-down {
+    0%{
+        transform: translateY(0);
+    }
+    30%{
+        transform: translateY(10px);
+    }
+}
+/* ========== Home Section End ========= */
+
+/* ========== About Section Start ========= */
+.about .container .content {
+    column-gap: 40px;
+    width: 100%;
+}
+
+.about-img {
+    position: relative;
+}
+
+.about-img img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.about-info .description {
+    max-width: 600px;
+}
+
+.about-info .description h3 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about-info .description h4 {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about-info .description h4 span {
+    color: var(--second-color);
+}
+
+.about-info .description p {
+    color: var(--third-color);
+    font-size: var(--normal-font-size);
+    margin-bottom: 15px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid var(--line-color);
+}
+
+.about-info .professional-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.about-info .professional-list h3 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.about-info .professional-list span {
+    color: var(--third-color);
+    font-size: var(--small-font-size);
+}
+
+/* .skill-bars {
+    font-size: 1.5em;
+    width: 60%;
+    height: 100%;
+    letter-spacing: 3px;
+}
+
+.bar-info {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line {
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+.line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: var(--second-color);
+  }
+
+.html::before {
+    width: 90%;
+  }
+  
+.css::before {
+    width: 90%;
+  }
+  
+.js::before {
+    width: 70%;
+  }
+  
+.typescript::before {
+    width: 50%;
+  }
+  
+.cSharp::before {
+    width: 70%;
+  }
+  
+.python::before {
+    width: 50%;
+  }
+  
+.mysql::before {
+    width: 90%;
+  } */
+
+/* ========== About Section End ========= */
+
+/* ========== Skills Section Start ========= */
+/* ========== Skills Section End ========= */
+
+/* ========== Services Section Start ========= */
+/* ========== Services Section End ========= */
+
+/* ========== Portfolio Section Start ========= */
+/* ========== Portfolio Section End ========= */
+
+/* ========== Get-In-Touch Start ========= */
+/* ========== Get-In-Touch End ========= */
+
+/* ========== Clients Section Start ========= */
+/* ========== Clients Section End ========= */
+
+/* ========== Contact Section Start ========= */
+/* ========== Contact Section End ========= */
+
+/* ========== Footer Start ========= */
+/* ========== Footer End ========= */
