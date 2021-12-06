@@ -38,35 +38,25 @@
 
 .dark-theme {
     /* Main Theme Colors */
-    --first-color: #0e2431;
+    --first-color: #fff;
     --second-color: #6a59d1;
-    --third-color: #777;
-  
-    /* hover Colors */
-    --hover-color: #614fd0;
+    --third-color: #a9afc3;
   
     /* Background Colors */
-    --body-bg-color: #fefefe;
-    --card-bg-color: #fff;
-    --modal-bg-color: #fff;
-    --bg-transparent-color: rgba(0, 0, 0, 0.1);
-    --bg-transparent-color-2: rgba(0, 0, 0, 0.1);
-    --bg-transparent-color-3: rgba(106, 89, 209, 0.1);
-    --line-color: #d7d7d7;
+    --body-bg-color: #0e1b31;
+    --card-bg-color: #132347;
+    --modal-bg-color: #102048;
+    --bg-transparent-color: rgba(255, 255, 255, 0.1);
+    --bg-transparent-color-2: rgba(255, 255, 255, 0.1);
+    --line-color: #454f6b;
   
     /* Color Filter */
-    --color-filter: invert(1);
+    --color-filter: invert(0);
   
-    /* Box Shadow */
-    --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
-  
-    /* Font Size */
-    --small-font-size: 0.9em;
-    --normal-font-size: 1em;
   
     /* Scroll Bar Colors */
-    --scroll-bar-color: #c5cadf;
-    --scroll-thumb-color: #70768a;
+    --scroll-bar-color: #c1ceff;
+    --scroll-thumb-color: #282f4e;
     --scroll-thumb-hover-color: #454f6b;
 }
 
@@ -143,8 +133,12 @@ img {
   cursor: pointer;
 }
 
-.theme-btn .fa-sun {
+.theme-btn .fa-sun, .theme-btn.sun .fa-moon {
   display: none;
+}
+
+.theme-btn.sun .fa-sun{
+  display: block;
 }
 
 /* ========== Light/Dark Theme Button End ========= */

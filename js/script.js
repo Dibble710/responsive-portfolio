@@ -98,7 +98,7 @@ const getCurrentTheme = () => document.body.classList.contains('dark-theme') ? '
 const getCurrentIcon = () => themeBtn.classList.contains('sun') ? 'sun' : 'moon'
 
 const savedTheme = localStorage.getItem('saved-theme')
-const savedTheme = localStorage.getItem('saved-icon')
+const savedIcon = localStorage.getItem('saved-icon')
 
 if (savedTheme) {
     document.body.classList[savedTheme === 'dark' ? 'add' : 'remove']('dark-theme')
