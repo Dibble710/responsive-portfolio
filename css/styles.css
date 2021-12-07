@@ -80,12 +80,16 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--second-color);
 }
 
 li {
   list-style: none;
 }
 
+img {
+  max-width: 450px;
+}
 
 /* ========== General Styling End ========= */
 
@@ -562,7 +566,7 @@ header.sticky .nav-bar {
 }
 
 .bar .css:before {
-  width: 85%;
+  width: 90%;
 }
 
 .bar .javascript:before {
@@ -583,6 +587,10 @@ header.sticky .nav-bar {
 
 .bar .csharp:before {
   width: 85%;
+}
+
+.bar .python:before {
+  width: 55%;
 }
 
 .experience-card {
@@ -619,6 +627,10 @@ header.sticky .nav-bar {
 .bar:hover,
 .experience-card:hover {
   transform: scale(1.03);
+}
+
+.quote-author {
+  color: var(--second-color);
 }
 
 /* ========== Skills Section End ========= */
@@ -1015,7 +1027,7 @@ header.sticky .nav-bar {
 }
 
 .contact-list li span a {
-  color: var(--third-color);
+  color: var(--second-color) !important;
 }
 
 .contact-right p {

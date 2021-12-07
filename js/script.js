@@ -32,6 +32,7 @@ modalCloseBtns.forEach((closeBtn) => {
 const portfolioModals = document.querySelectorAll(".portfolio-modal");
 const imgCards = document.querySelectorAll(".img-card");
 const portfolioCloseBtns = document.querySelectorAll(".portfolio-close-btn");
+const projectLinks = document.querySelectorAll(".project-link");
 
 var portfolioModal = (modalClick) => {
   portfolioModals[modalClick].classList.add("active");
@@ -51,22 +52,32 @@ portfolioCloseBtns.forEach((portfolioCloseBtn) => {
   });
 });
 
+// Close modal when clicking on project link
+projectLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    portfolioModals.forEach((portfolioModalView) => {
+      portfolioModalView.classList.remove("active");
+    });
+  })
+})
+
 // Stop modals from showing on page load
 
-// swiper
-var swiper = new Swiper(".client-swiper", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+// ============= swiper - Waiting to add clients to client list ============= //
+
+// var swiper = new Swiper(".client-swiper", {
+//   slidesPerView: 1,
+//   spaceBetween: 30,
+//   loop: true,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
 
 // Scroll To Top Button
 
@@ -136,7 +147,8 @@ window.addEventListener("scroll", () => {
 const menuBtn = document.querySelector(".nav-menu-btn");
 const closeBtn = document.querySelector(".nav-close-btn");
 const navigation = document.querySelector(".navigation");
-const navItems = document.querySelectorAll(".nav-items a")
+const navItems = document.querySelectorAll(".nav-items a");
+
 
 menuBtn.addEventListener('click', () => {
   navigation.classList.add('active');
@@ -152,6 +164,24 @@ navItems.forEach((navItem) => {
   })
 })
 
-
 // Scroll Reveal Animations
 
+ScrollReveal({ 
+  reset: false,
+  distance: '60px',
+  duration: 2500,
+  delay: 100 
+});
+
+// Target Elements, and specify options
+
+ScrollReveal().reveal('.home .info h2, .section-title-01, .section-title-02', { delay: 500, origin: 'left' });
+ScrollReveal().reveal('.home .info h3, .home .info p, .about-info .btn', { delay: 600, origin: 'right' });
+ScrollReveal().reveal('.home .info .btn', { delay: 700, origin: 'bottom' });
+ScrollReveal().reveal('.media-icons i, .contact-left li', { delay: 500, origin: 'left', interval: 200 });
+ScrollReveal().reveal('.home-img, .about-img', { delay: 500, origin: 'bottom' });
+ScrollReveal().reveal('.about .description, .copy-right', { delay: 600, origin: 'right' });
+ScrollReveal().reveal('.about .professional-list li', { delay: 600, origin: 'right', interval: 200 });
+ScrollReveal().reveal('.skills-description, .service-description, .contact-card, .client-swiper, .contact-left h2', { delay: 700, origin: 'left' });
+ScrollReveal().reveal('.experience-card, .service-card, .education, .portfolio .img-card', { delay: 700, origin: 'bottom', interval: 200 });
+ScrollReveal().reveal('footer .group', { delay: 500, origin: 'top', interval: 200 });
