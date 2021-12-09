@@ -1,10 +1,12 @@
-// Navigation Bar Effects On Scroll
+// ================== Navigation Bar Effects On Scroll ======================== //
+
 window.addEventListener("scroll", () => {
   const header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-// Service Modal
+// ============================= Service Modal ======================= //
+
 const serviceModals = document.querySelectorAll(".service-modal");
 const learnMoreBtns = document.querySelectorAll(".learn-more-btn");
 const modalCloseBtns = document.querySelectorAll(".modal-close-btn");
@@ -27,7 +29,7 @@ modalCloseBtns.forEach((closeBtn) => {
   });
 });
 
-// Portfolio Modals
+// ======================= Portfolio Modals ====================== //
 
 const portfolioModals = document.querySelectorAll(".portfolio-modal");
 const imgCards = document.querySelectorAll(".img-card");
@@ -53,6 +55,7 @@ portfolioCloseBtns.forEach((portfolioCloseBtn) => {
 });
 
 // Close modal when clicking on project link
+
 projectLinks.forEach((link) => {
   link.addEventListener('click', () => {
     portfolioModals.forEach((portfolioModalView) => {
@@ -170,18 +173,18 @@ ScrollReveal({
   reset: false,
   distance: '60px',
   duration: 2500,
-  delay: 100 
+  delay: 400
 });
 
 // Target Elements, and specify options
 
 ScrollReveal().reveal('.home .info h2, .section-title-01, .section-title-02, footer .about', { delay: 500, origin: 'left' });
-ScrollReveal().reveal('.home .info h3, .home .info p, .about-info .btn', { delay: 600, origin: 'right' });
-ScrollReveal().reveal('.home .info .btn', { delay: 700, origin: 'bottom' });
-ScrollReveal().reveal('.media-icons i, .contact-left li', { delay: 500, origin: 'left', interval: 200 });
-ScrollReveal().reveal('.home-img, .about-img', { delay: 500, origin: 'bottom' });
-ScrollReveal().reveal('.about .description, .copy-right', { delay: 600, origin: 'right' });
-ScrollReveal().reveal('.about .professional-list li, .contact-right div', { delay: 600, origin: 'right', interval: 200 });
-ScrollReveal().reveal('.skills-description, .service-description, .contact-card, .client-swiper, .contact-left h2', { delay: 700, origin: 'left' });
-ScrollReveal().reveal('.experience-card, .service-card, .education, .portfolio .img-card, .info', { delay: 700, origin: 'bottom', interval: 200 });
-ScrollReveal().reveal('footer .group', { delay: 500, origin: 'top', interval: 200 });
+ScrollReveal().reveal('.home .info h3, .home .info p, .about-info .btn', { delay: 500, origin: 'right' });
+ScrollReveal().reveal('.home .info .btn', { delay: 600, origin: 'bottom' });
+ScrollReveal().reveal('.media-icons i, .contact-left li', { delay: 400, origin: 'left', interval: 200 });
+ScrollReveal().reveal('.home-img, .about-img', { delay: 400, origin: 'bottom' });
+ScrollReveal().reveal('.about .description, .copy-right', { delay: 500, origin: 'right' });
+ScrollReveal().reveal('.about .professional-list li, .contact-right div', { delay: 500, origin: 'right', interval: 200 });
+ScrollReveal().reveal('.skills-description, .service-description, .contact-card, .client-swiper, .contact-left h2', { delay: 600, origin: 'left' });
+ScrollReveal().reveal('.experience-card, .service-card, .education, .portfolio .img-card, .info', { delay: 600, origin: 'bottom', interval: 200 });
+ScrollReveal().reveal('footer .group', { delay: 400, origin: 'top', interval: 200 });
