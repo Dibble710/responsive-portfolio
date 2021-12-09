@@ -91,6 +91,19 @@ img {
   max-width: 450px;
 }
 
+/* =========== icon styling =============== */
+
+.react-icon, .python-icon {
+  font-size: 2rem;
+}
+.react-icon {
+  color: #61DBFB;
+}
+
+.python-icon {
+color: #FFD43B;
+}
+
 /* ========== General Styling End ========= */
 
 /* ========== Scroll To Top Button Start ========= */
@@ -146,6 +159,44 @@ img {
 }
 
 /* ========== Light/Dark Theme Button End ========= */
+
+/* ========== SVG Phone Start ========= */
+
+
+#skeleton {
+  animation: fadeInUp 1s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#bolt g {
+  opacity: 0;
+  animation: dropIn 5s ease infinite;
+  animation-delay:calc(var(--order) * 200ms) ;
+}
+@keyframes dropIn {
+  20% {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  30%,
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== SVG Phone End ========= */
+
 
 /* ========== Scroll Bar Start ========= */
 ::-webkit-scrollbar {
@@ -1360,9 +1411,13 @@ footer a {
     position: absolute;
   }
 
-  .home-container .home-img img {
-    width: 65%;
+  .home-container .home-img .phone-div {
+    width: 35%;
     transform: translate(80px, -180px);
+  }
+
+  .home-container .home-img .phone-div svg {
+    width: 255px;
   }
 
   .home .home-container .info {
