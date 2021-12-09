@@ -104,6 +104,17 @@ img {
 color: #FFD43B;
 }
 
+.javascript-icon {
+  color: #f0db4f ;
+}
+
+.html-icon {
+  color: #e34c26;
+}
+
+.css-icon {
+  color: #264de4;
+}
 /* ========== General Styling End ========= */
 
 /* ========== Scroll To Top Button Start ========= */
@@ -576,23 +587,26 @@ header.sticky .nav-bar {
 .bar {
   background: var(--card-bg-color);
   box-shadow: var(--box-shadow);
+  border-bottom: 3px solid var(--second-color);
   margin-bottom: 10px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 6px;
   transition: .3s ease;
 }
 
 .bar .info {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 5px;
   font-size: var(--small-font-size);
 }
 
-.bar .info span {
+.bar .info span, .bar .info i {
   font-weight: 500;
+  font-size: 1.2rem;
 }
+
 
 .bar .line {
   position: relative;
@@ -602,7 +616,7 @@ header.sticky .nav-bar {
   border-radius: 2px;
 }
 
-.bar .line:before {
+/* .bar .line:before {
   content: '';
   position: absolute;
   height: 100%;
@@ -610,9 +624,9 @@ header.sticky .nav-bar {
   left: 0;
   background-color: var(--second-color);
   border-radius: 2px;
-}
+} */
 
-.bar .html:before {
+/* .bar .html:before {
   width: 95%;
 }
 
@@ -642,6 +656,15 @@ header.sticky .nav-bar {
 
 .bar .python:before {
   width: 55%;
+} */
+
+.skills-head {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--second-color);
+  border-radius: 5px;
+  width: 15vw;
+  padding: 12px;
 }
 
 .experience-card {
