@@ -1445,6 +1445,7 @@ footer a {
   .home-container .home-img .phone-div {
     width: 25%;
     transform: translate(30px, -190px);
+    z-index: 0;
   }
 
   .home-container .home-img .phone-div svg {
