@@ -93,9 +93,10 @@ img {
 
 /* =========== icon styling =============== */
 
-.react-icon, .python-icon {
+.react-icon, .python-icon, .js-icon, .icon, .db-icon  {
   font-size: 2rem;
 }
+
 .react-icon {
   color: #61DBFB;
 }
@@ -104,8 +105,8 @@ img {
 color: #FFD43B;
 }
 
-.javascript-icon {
-  color: #f0db4f ;
+.javascript-icon, .js-icon {
+  color: #f0db4f;
 }
 
 .html-icon {
@@ -118,8 +119,6 @@ color: #FFD43B;
 
 .db-icon {
   color: #336791;
-  padding-left: 6px;
-  font-size: 1.9rem;
 }
 /* ========== General Styling End ========= */
 
