@@ -66,21 +66,21 @@ projectLinks.forEach((link) => {
 
 // Stop modals from showing on page load
 
-// ============= swiper - Waiting to add clients to client list ============= //
+// ============= swiper ============= //
 
-// var swiper = new Swiper(".client-swiper", {
-//   slidesPerView: 1,
-//   spaceBetween: 30,
-//   loop: true,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
+var swiper = new Swiper(".client-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 // Scroll To Top Button
 
@@ -171,7 +171,7 @@ navItems.forEach((navItem) => {
 
 ScrollReveal({ 
   reset: false,
-  distance: '60px',
+  distance: '100px',
   duration: 2000,
   delay: 100
 });
