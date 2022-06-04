@@ -169,22 +169,22 @@ navItems.forEach((navItem) => {
 
 // Scroll Reveal Animations
 
-ScrollReveal({ 
-  reset: false,
-  distance: '100px',
-  duration: 2000,
-  delay: 100
-});
+// ScrollReveal({ 
+//   reset: false,
+//   distance: '100px',
+//   duration: 2000,
+//   delay: 100
+// });
 
-// Target Elements, and specify options
+// // Target Elements, and specify options
 
-ScrollReveal().reveal('.home .info h2, .section-title-01, .section-title-02, footer .about', { delay: 100, origin: 'left' });
-ScrollReveal().reveal('.home .info h3, .home .info p, .about-info .btn', { delay: 100, origin: 'right' });
-ScrollReveal().reveal('.home .info .btn', { delay: 100, origin: 'bottom' });
-ScrollReveal().reveal('.media-icons i, .contact-left li', { delay: 100, origin: 'left', interval: 200 });
-ScrollReveal().reveal('.home-img, .about-img', { delay: 100, origin: 'bottom' });
-ScrollReveal().reveal('.about .description, .copy-right', { delay: 100, origin: 'right' });
-ScrollReveal().reveal('.about .professional-list li, .contact-right div', { delay: 100, origin: 'right', interval: 200 });
-ScrollReveal().reveal('.skills-description, .service-description, .contact-card, .client-swiper, .contact-left h2', { delay: 100, origin: 'left' });
-ScrollReveal().reveal('.experience-card, .service-card, .education, .portfolio .img-card, .info', { delay: 100, origin: 'bottom', interval: 200 });
-ScrollReveal().reveal('footer .group', { delay: 100, origin: 'top', interval: 200 });
+// ScrollReveal().reveal('.home .info h2, .section-title-01, .section-title-02, footer .about', { delay: 100, origin: 'left' });
+// ScrollReveal().reveal('.home .info h3, .home .info p, .about-info .btn', { delay: 100, origin: 'right' });
+// ScrollReveal().reveal('.home .info .btn', { delay: 100, origin: 'bottom' });
+// ScrollReveal().reveal('.media-icons i, .contact-left li', { delay: 100, origin: 'left', interval: 200 });
+// ScrollReveal().reveal('.home-img, .about-img', { delay: 100, origin: 'bottom' });
+// ScrollReveal().reveal('.about .description, .copy-right', { delay: 100, origin: 'right' });
+// ScrollReveal().reveal('.about .professional-list li, .contact-right div', { delay: 100, origin: 'right', interval: 200 });
+// ScrollReveal().reveal('.skills-description, .service-description, .contact-card, .client-swiper, .contact-left h2', { delay: 100, origin: 'left' });
+// ScrollReveal().reveal('.experience-card, .service-card, .education, .portfolio .img-card, .info', { delay: 100, origin: 'bottom', interval: 200 });
+// ScrollReveal().reveal('footer .group', { delay: 100, origin: 'top', interval: 200 });
