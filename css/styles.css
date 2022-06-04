@@ -1421,7 +1421,9 @@ footer a {
 }
 
 /* ========== Media Query max-width 1070px End ========= */
-
+.home-container .home-img .phone-div svg {
+  width: 400px;
+}
 
 /* ========== Media Query max-width 730px Start ========= */
 @media screen and (max-width: 730px) {
