@@ -32,6 +32,8 @@
   --scroll-bar-color: #c5cadf;
   --scroll-thumb-color: #70768a;
   --scroll-thumb-hover-color: #454f6b;
+
+  --grayscale: grayscale(0%);
 }
 
 /* ========== General Styling Start ========= */
@@ -58,6 +60,8 @@
   --scroll-bar-color: #c1ceff;
   --scroll-thumb-color: #282f4e;
   --scroll-thumb-hover-color: #454f6b;
+
+  --grayscale: grayscale(100%);
 }
 
 * {
@@ -1033,6 +1037,7 @@ header.sticky .nav-bar {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  filter: var(--grayscale);
 }
 
 .client-details {
